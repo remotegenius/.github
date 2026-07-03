@@ -130,6 +130,14 @@ Network and infrastructure operations (switches, routers, firewalls, access poin
 
 ---
 
+## Repositories
+
+- **[rg-specifications](https://github.com/remotegenius/rg-specifications)** — the public, sanitized spec: unified device-shadow JSON Schemas, the bridge/device/`DevicePortAllocation` models, a runnable mock adapter demonstrating canonical→vendor translation over a device API, sanitized agent- and appliance-form-factor deploy scripts, reference API clients, and architecture decision records.
+
+More reference material and adapter examples will land here over time. Contributions to the public specs and reference clients are welcome — see each repo's `CONTRIBUTING.md`.
+
+---
+
 ## Glossary (quick reference)
 
 **RG Platform** — the whole system. **RG Bridge** — the component (agent or appliance) that carries a device's traffic to a cluster. **RG Cluster** — a regional, autonomous execution plane made of interchangeable nodes. **Device shadow** — the canonical vendor-neutral representation of a device, built from its API. **Adapter** — per-vendor/model/firmware translation behind the shadow. **Native GUI access** — the device's own web dashboard, tunneled through the platform and access-controlled. **Form factor** — `agent` (embedded on device) or `appliance` (standalone bridge). **Attachment state** — `never_attached` / `attached` / `detached`. **CGNAT** — carrier-grade NAT, the network condition RG's outbound-only model is built to traverse.
